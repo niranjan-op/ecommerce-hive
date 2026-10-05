@@ -1,0 +1,11 @@
+faker>=25.0.0
+pandas>=2.0.0
+plotly>=5.18.0
+streamlit>=1.35.0
+
+# PyHive without [hive] extras — avoids the 'sasl' C extension
+# that fails to compile on Python 3.12+ / Windows.
+# For local HiveServer2 with auth=NONE or NOSASL, only thrift is needed.
+pyhive>=0.7.0
+thrift>=0.16.0
+thrift-sasl>=0.4.3
